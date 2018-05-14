@@ -29,14 +29,14 @@ FPGA上运行主频50Mhz。内核配置有一个32KB ICACHE和一个32KB DCACHE�
 该软件环境下的apps目录包含已有的外设操作c代码，libs包含外设库文件，ref下为链接脚本，utils包含脚本转换文件。  
 文件编译在build目录下进行。
 # 程序调试过程
-1. 在ppu-sw的build目录中，make相应程序，例如:make helloworld.
+1. 在ppu-sw的build目录中，make相应程序，例如:make emmc_test
 2. 链接好板子的电源、jtag和调试串口。
 3. 在主机上打开串口调试助手，波特率62500。
 3. 在ppu-sw目录下，执行 openocd -f ft2232.cfg
 4. 新开一个终端，在ppu-sw目录下，执行 riscv32-unknown-elf-gdb
 5. 在gdb内：
 ```
-    $ file build/apps/helloworld/helloworld.elf
+    $ file build/apps/emmc_test/emmc_test.elf
     $ target remote localhost:3333
     $ set $pc=0x80000080
     $ load
