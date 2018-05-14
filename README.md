@@ -1,5 +1,6 @@
 # 系统简介
-ppu系统内核为riscv-rocket(https://github.com/freechipsproject/rocket-chip)，FPGA上运行主频50Mhz。内核配置有一个32KB ICACHE和一个32KB DCACHE。soc上有一个64KB的SRAM和一个DDR3接口。
+ppu系统内核为riscv-rocket(https://github.com/freechipsproject/rocket-chip).
+FPGA上运行主频50Mhz。内核配置有一个32KB ICACHE和一个32KB DCACHE。soc上有一个64KB的SRAM和一个DDR3接口。
 # 安装riscv工具链
 - riscv-tools(https://github.com/riscv/riscv-tools/tree/cf052a0e005d537bba45312146449b7451609dbd). 
 必须用cf052a0这个版本。
