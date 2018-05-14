@@ -44,6 +44,7 @@ FPGA上运行主频50Mhz。内核配置有一个32KB ICACHE和一个32KB DCACHE�
 ```
 程序开始执行，在电脑上在调试命令参看gdb的help。
 # FPGA 内存映射
+BootRom
 |代码库|链接  |
 |:----:|----|
 |MarkDown                              |[https://github.com/younghz/Markdown](https://github.com/younghz/Markdown "Markdown")|
