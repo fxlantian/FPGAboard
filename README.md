@@ -50,9 +50,9 @@ FPGA上运行主频50Mhz。内核配置有一个32KB ICACHE和一个32KB DCACHE�
 |MarkDownCopy                              |[https://github.com/younghz/Markdown](https://github.com/younghz/Markdown "Markdown")|
 
 BootRom
-| device | address | size |
-| --- | --- | --- |
-| bootrom | 0x0000_1000 | 4KB |
+|device   | address     | size |
+| ------- | ----------- | ---- |
+| bootrom | 0x0000_1000 | 4KB  |
 
 Interrupts
 device | address | size
