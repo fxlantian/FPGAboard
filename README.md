@@ -45,25 +45,19 @@ FPGA上运行主频50Mhz。内核配置有一个32KB ICACHE和一个32KB DCACHE�
 程序开始执行，在电脑上在调试命令参看gdb的help。
 # FPGA 内存映射
 ### BootRom
-|代码库|链接  |
-|:----:|----|
-|MarkDown                              |[https://github.com/younghz/Markdown](https://github.com/younghz/Markdown "Markdown")|
-|MarkDownCopy                              |[https://github.com/younghz/Markdown](https://github.com/younghz/Markdown "Markdown")|
-
-BootRom
 
 |device   | address     | size |
 | ------- | ----------- | ---- |
 | bootrom | 0x0000_1000 | 4KB  |
 
-Interrupts
+### Interrupts
 
 device | address | size
 ---|---|---
 CLINT | 0x0200_0000 | 64KB
 PLIC  | 0x0C00_0000 | 64MB
 
-MMIO
+### MMIO
 
 device | address | size
 ---|---|---
@@ -81,7 +75,7 @@ pwm     | 0x6000_A000 | 4KB
 ahb     | 0x7FFF_C000 | 4KB
 SDIO    | 0x7FFF_F000 | 4KB
 
-MEM
+### MEM
 
 device | address | size
 ---|---|---
