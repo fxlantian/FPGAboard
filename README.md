@@ -46,7 +46,7 @@ FPGA上运行主频50Mhz。内核配置有一个32KB ICACHE和一个32KB DCACHE�
 # FPGA 内存映射
 BootRom
 |device | address | size|
-|---|---|---|
+|:---|:---|:---|
 |bootrom | 0x0000_1000 | 4KB|
 
 Interrupts
