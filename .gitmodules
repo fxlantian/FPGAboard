@@ -1,3 +1,6 @@
 [submodule "riscv-tools"]
 	path = riscv-tools
 	url = https://github.com/riscv/riscv-tools.git
+[submodule "ppu-sw"]
+	path = ppu-sw
+	url = https://github.com/fxlantian/ppu-sw.git
