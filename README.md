@@ -1,21 +1,27 @@
 # 系统简介
 ppu系统内核为riscv-rocket(https://github.com/freechipsproject/rocket-chip).
 FPGA上运行主频50Mhz。内核配置有一个32KB ICACHE和一个32KB DCACHE。soc上有一个64KB的SRAM和一个DDR3接口。
-# 安装riscv工具链
-- riscv-tools(https://github.com/riscv/riscv-tools/tree/cf052a0e005d537bba45312146449b7451609dbd). 
-必须用cf052a0这个版本。
-
+# 下载代码
 ```
-    $ git clone https://github.com/riscv/riscv-tools/tree/cf052a0e005d537bba45312146449b7451609dbd
+    $ git clone https://github.com/fxlantian/FPGAboard.git
+    $ cd FPGAboard
+    $ git submodule update --init
+```
+# 安装riscv工具链
+首先指定RISCV环境变量
+```
+    $ export RISCV=/path/to/riscv/toolchain/installation
+```
+构建这个版本的工具
+```
     $ cd riscv-tools
+    $ git submodule update --init --recursive
     $ export RISCV=/path/to/install/riscv/toolchain
     $ export MAKEFLAGS="$MAKEFLAGS -jN" # Assuming you have N cores on your host system
     $ ./build-rv32ima.sh (using RV32).
 ```
-# 下载ppu软件环境
-- ppu-sw(https://github.com/fxlantian/ppu-sw)
+# 安装ppu软件环境
 ```
-    $ git clone https://github.com/fxlantian/ppu-sw
     $ cd ppu-sw
     $ ./ch.sh
 ```
