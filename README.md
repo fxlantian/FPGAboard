@@ -7,6 +7,7 @@ FPGA上运行主频50Mhz。内核配置有一个32KB ICACHE和一个32KB DCACHE�
     $ cd FPGAboard
     $ git submodule update --init
 ```
+先查看pinconnet目录下的图片连接好电路, 其它pdf文件为参考手册.
 # 安装riscv工具链
 首先指定RISCV环境变量
 ```
