@@ -51,17 +51,20 @@ FPGA上运行主频50Mhz。内核配置有一个32KB ICACHE和一个32KB DCACHE�
 |MarkDownCopy                              |[https://github.com/younghz/Markdown](https://github.com/younghz/Markdown "Markdown")|
 
 BootRom
+
 |device   | address     | size |
 | ------- | ----------- | ---- |
 | bootrom | 0x0000_1000 | 4KB  |
 
 Interrupts
+
 device | address | size
 ---|---|---
 CLINT | 0x0200_0000 | 64KB
 PLIC  | 0x0C00_0000 | 64MB
 
 MMIO
+
 device | address | size
 ---|---|---
 uart0   | 0x6000_0000 | 4KB 
@@ -77,7 +80,9 @@ i2c1    | 0x6000_9000 | 4KB
 pwm     | 0x6000_A000 | 4KB
 ahb     | 0x7FFF_C000 | 4KB
 SDIO    | 0x7FFF_F000 | 4KB
+
 MEM
+
 device | address | size
 ---|---|---
 DDR3    | 0x8000_0000 | 128MB
